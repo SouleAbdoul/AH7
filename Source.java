@@ -10,8 +10,13 @@ class Node<T> {
 
 class Source {
   public static int sumList(Node<Integer> head) {
-    // todo
-    return;
+    Node<Integer> temp = head;
+    int result = 0;
+    while(temp != null){
+     result += temp.val;
+     temp = temp.next;
+    }
+    return result;
   }
 
   public static void main(String[] args) {
